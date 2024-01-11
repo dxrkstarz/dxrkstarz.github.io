@@ -1,4 +1,4 @@
-# DXRK
+# DXRK™
 Welcome to DXRK! The ultimate destination for everything unblocked games. Tired of 
 those annoying school blockers? Then DXRK is just the thing you need.
 
@@ -32,6 +32,7 @@ If you encounter any issues on our site, please contact us:
 dxrkstarz' Discord: dxrkstarz_beno#6950
 Asherlr's Discord: Asherlr23#6969
 
+Your feedback is essential in making DXRK the best it can be.
 ## Thanks to:
 @Asherlr23 - Head of UI/UX Design / Developer
 
