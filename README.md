@@ -33,7 +33,7 @@ dxrkstarz' Discord: dxrkstarz_beno#6950
 Asherlr's Discord: Asherlr23#6969
 
 ## Thanks to:
-Asherlr - Head of UI/UX Design / Developer
+@Asherlr23 - Head of UI/UX Design / Developer
 
 ## Disclaimer
 DXRK is intended for recreational purposes only. Users are responsible for adhering to 
