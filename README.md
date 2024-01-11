@@ -36,6 +36,6 @@ Asherlr's Discord: Asherlr23#6969
 @Asherlr23 - Head of UI/UX Design / Developer
 
 ## Disclaimer
-DXRK is intended for recreational purposes only. Users are responsible for adhering to 
-their school's policies and guidelines. The website creators are not liable for any 
-consequences resulting from the use of this platform in educational institutions.
+DXRK is intended for recreational purposes only. Users are responsible for adhering to their school's policies and guidelines. The games featured on this platform are not created or owned by DXRK; instead, they are sourced from various developers and publishers. DXRK acts solely as a platform to provide access to games.
+
+The website creators are not liable for any consequences resulting from the use of this platform in educational institutions. Any issues or concerns related to specific games should be directed to the respective developers or copyright holders.
