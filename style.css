@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Jura:wght@300&display=swap');
+
+::root {
+  --text: #e9dcf0;
+  --background: #100815;
+  --primary: #bd40fd;
+  --secondary: #7012a0;
+  --accent: #a800ff;
+}
+
+html,
+body {
+  color: #a800ff;
+  background: #100815;
+  font-family: 'Audiowide';
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  color: #a800ff;
+  border: 3px solid #a800ff;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  font-family: 'Audiowide';
+  padding: 10px 12px;
+  transition: 200ms ease;
+  cursor:pointer;
+}
+button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: #bd40fd;
+  color: #bd40fd;
+}
