@@ -18,7 +18,13 @@
 }
 
 body {
-  background: linear-gradient(-16deg, #000, #000, #fff, #fff);
+  background: linear-gradient(
+    -16deg,
+    #000,
+    #000,
+    #fff,
+    #fff
+  );
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
   color: #fff;
@@ -47,14 +53,14 @@ body {
   width: calc(100% - 2rem);
   max-width: 1200px;
   height: 64px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3); /* Increased opacity for visibility */
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 1rem;
   display: flex;
   align-items: center;
   padding: 0 1rem;
-  z-index: 1000;
+  z-index: 1000; /* Increased z-index */
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
@@ -66,7 +72,7 @@ body {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 0.75rem;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: all 0.2s ease;
   margin-left: auto;
 }
 
@@ -77,8 +83,8 @@ body {
 #quickSettings {
   position: absolute;
   bottom: 80px;
-  right: 0;
-  background: rgba(255, 255, 255, 0.3);
+  right: 0px;
+  background: rgba(255, 255, 255, 0.3); /* Increased opacity for visibility */
   backdrop-filter: blur(20px);
   border-radius: 1rem;
   padding: 1.5rem;
@@ -88,7 +94,7 @@ body {
   min-width: 300px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: all 0.3s ease;
   transform-origin: bottom right;
 }
 
@@ -118,7 +124,7 @@ body {
   padding: 0.75rem;
   border-radius: 0.75rem;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .WiFiQuickSetting:hover,
@@ -159,6 +165,7 @@ img {
   opacity: 0.8;
 }
 
+/* Custom checkbox styling */
 input[type="checkbox"] {
   appearance: none;
   width: 40px;
@@ -167,7 +174,7 @@ input[type="checkbox"] {
   border-radius: 12px;
   position: relative;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 input[type="checkbox"]:checked {
@@ -183,13 +190,14 @@ input[type="checkbox"]::before {
   top: 2px;
   left: 2px;
   background: white;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 input[type="checkbox"]:checked::before {
   transform: translateX(16px);
 }
 
+/* Custom range input styling */
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
@@ -202,12 +210,13 @@ input[type="range"] {
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
+  appearance: none;
   width: 16px;
   height: 16px;
   background: white;
   border-radius: 50%;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 input[type="range"]::-webkit-slider-thumb:hover {
@@ -221,19 +230,25 @@ input[type="range"]::-moz-range-thumb {
   background: white;
   border-radius: 50%;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .brightnessOverlay {
-  width: 100vw;
+  width:100vw;
   height: 100vh;
 }
 
 #startMenu {
   position: absolute;
-  bottom: 100%;
+  bottom: 100%; /* Change this from 80px to 100% */
   left: 0;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3); /* Increased opacity for visibility */
   backdrop-filter: blur(20px);
   border-radius: 1rem;
   padding: 1.5rem;
@@ -243,9 +258,9 @@ input[type="range"]::-moz-range-thumb {
   min-width: 300px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  transform-origin: bottom left;
-  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  transform-origin: bottom left; /* Change this from bottom right to bottom left */
+  margin-bottom: 10px; /* Add some space between taskbar and start menu */
 }
 
 .taskItem {
@@ -260,31 +275,36 @@ input[type="range"]::-moz-range-thumb {
   align-items: center;
   gap: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: background 0.3s ease;
+  transition:0.3s ease;
+}
+
+.taskItem img {
+  width:60%;
+  height:60%;
 }
 
 .taskItem:hover {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.1);
-}
+} 
 
 .hidden {
   opacity: 0;
   transform: scale(0.95);
   pointer-events: none;
-  display: none;
+  display: none; /* Add this line */
 }
 
 #startMenuSettingsBtn {
   background-color: transparent;
   padding: 12px;
   border-radius: 50%;
+  height: 50;
   aspect-ratio: 1/1;
-  border: none;
-  transition: background 0.3s ease;
-  cursor: pointer;
+  border: transparent;
+  transition: 300ms ease;
+  cursor:pointer;
 }
-
 #startMenuSettingsBtn:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
@@ -292,22 +312,21 @@ input[type="range"]::-moz-range-thumb {
 #taskbarsearch {
   position: absolute;
   border: 1px solid #fff;
-  border-radius: 0.75rem;
+  border-radius: .75rem;
   background-color: transparent;
   padding: 8px 32px;
   height: 80%;
-  width: 225px;
+  width:225px;
   left: 70px;
-  transition: background 0.3s ease;
+  transition: 300ms ease;
 }
-
-#taskbarsearch:focus,
-#taskbarsearch:hover {
+#taskbarsearch:focus {
   outline: none;
   background-color: rgba(255, 255, 255, 0.3);
 }
-
-#taskbarsearch::placeholder {
-  color: #fff;
+#taskbarsearch:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
-
+#taskbarsearch::placeholder {
+  color:#fff
+}
