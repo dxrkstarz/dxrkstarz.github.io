@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+:root {
+  --main-color: (#6e05e6);
+  --highlights: (#7700ff);
+}
+html,
+body {
+  background-color: #0f0f0f;
+  font-family: "Audiowide", sans-serif;
+  scroll-behavior: smooth;
+}
+.content {
+  padding: 16px;
+  width: 100vw;
+  height: 100vh;
+}
+h1 {
+  font-weight: 500;
+  font-size: xx-large;
+  color: #fff;
+}
+h2 {
+  font-weight: 500;
+  font-size: x-large;
+  color: #fff;
+}
+h3 {
+  font-weight: 500;
+  font-size: larger;
+  color: #fff;
+}
+h4 {
+  font-weight: 500;
+  font-size: medium;
+  color: #fff;
+}
+h5 {
+  font-weight: 500;
+  font-size: small;
+  color: #fff;
+}
+h6 {
+  font-weight: 500;
+  font-size: smaller;
+  color: #fff;
+}
+p {
+  font-weight: 300;
+  font-size: medium;
+  color: #fff;
+}
+a {
+  font-weight: 300;
+  font-size: medium;
+  text-decoration: none;
+  color: #6e05e6;
+  transition: 0.3s ease;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #7700ff;
+  color: #7700ff;
+  cursor: pointer;
+}
+.card-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.card {
+  background-color: #1c1c1c;
+  border: transparent;
+  border-radius: 3px;
+  margin: 8px;
+  padding: 30px;
+}
+button.outlined {
+  font-family: "Audiowide", sans-serif;
+  color: #6e05e6;
+  background-color: transparent;
+  border: 1px #6e05e6 solid;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+button.outlined:hover {
+  color: #7700ff;
+  border-color: #7700ff;
+  cursor: pointer;
+  text-decoration: none;
+}
+button.filled {
+  font-family: "Audiowide", sans-serif;
+  color: #fff;
+  background-color: #6e05e6;
+  border: transparent;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+button.filled:hover {
+  background-color: #7700ff;
+  cursor: pointer;
+}
+a button {
+  text-decoration: none;
+}
+hr {
+  border-top: 1px #6e05e6 solid;
+  width: 80%;
+}
+.nav-wrapper {
+  display: inline;
+  background-color: #0e0e0e;
+}
+iframe {
+  border: 1px #6e05e6 solid;
+  border-radius: 3px;
+  aspect-ratio: 16 / 9;
+  width: 753px;
+}
